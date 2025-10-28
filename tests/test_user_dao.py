@@ -139,3 +139,6 @@ def test_insert_user_with_apostrophe_in_name(dao):
     assert fetched.active is True
 
 
+def test_deliberate_failure():
+    # This will always fail, just to check pytest is running correctly
+    assert 1 == 2, "This is an intentional failure to verify test runs"
