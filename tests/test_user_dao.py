@@ -125,7 +125,7 @@ def test_row_to_user_bool_conversion(active_value, expected_bool, dao, db_path):
     assert isinstance(converted.active, bool)
     assert converted.active is expected_bool
 
-
+   
 def test_insert_user_with_apostrophe_in_name(dao):
     name_with_quote = "Mary O'Sullivan"
     email = "mary@example.com"
